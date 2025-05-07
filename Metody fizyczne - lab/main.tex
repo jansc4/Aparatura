@@ -1,0 +1,140 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[MeX]{polski}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[small]{caption}
+\usepackage{makecell} % Used to break text in a single cell of a table.
+\usepackage{url}
+\usepackage{multirow}
+\def\UrlBreaks{\do\/\do-\/\do.\/\do_}
+\usepackage[all]{nowidow}
+\usepackage[shortlabels]{enumitem}
+\usepackage{upquote}
+\usepackage{setspace}
+\setstretch{1.0} % Tu sterujemy liczbowo odstępem między liniami tekstu.
+\usepackage[top=25mm,left=25mm,bottom=25mm,right=25mm]{geometry}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{biblatex}
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{placeins}
+% tikz libraries
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+
+
+
+
+
+\begin{document}
+	
+	%\pagenumbering{arabic}
+	\begin{center}
+		{\huge \bf Wpływ muzyki na reakcje fizjologiczne}
+		\vspace{.3in}
+		
+		{\Large{Student: Jan Nowak}} \\
+		{\large{Indeks: 268357}} \\
+            {\Large{Student: Szymon Kubica}} \\
+		{\large{Indeks: 264068}} \\
+		
+	\end{center}
+	
+	\section{Cel eksperymentu}
+Celem eksperymentu jest sprawdzenie, jak różne rodzaje muzyki wpływają na parametry fizjologiczne, takie jak tętno, aktywność mięśniowa, przewodnictwo skóry oraz ruch ciała - w zależności od dostępności sprzętu pomiarowego.
+
+\section{Metodologia eksperymentu}
+\subsection{Uczestnicy}
+\begin{itemize}
+    \item Grupa min. 6 osób (różny wiek, płeć)
+    \item Brak zaburzeń neurologicznych lub kardiologicznych (dla wiarygodności wyników)
+   
+\end{itemize}
+
+\subsection{Rodzaje muzyki}
+Podział na 3--5 różnych gatunków:
+\begin{itemize}
+    \item \textbf{Klasyczna} (np. Mozart) -- relaksacyjna
+    \item \textbf{Rock/metal} (np. AC/DC) -- pobudzająca
+    \item \textbf{Elektroniczna} (np. techno) -- rytmiczna
+    \item \textbf{Ambient} (np. lo-fi, chillout) -- neutralna
+    \item \textbf{Brak muzyki} (cisza) -- próba kontrolna 
+\end{itemize}
+Każdy uczestnik słucha krótkich (2--3 min) fragmentów każdej kategorii muzycznej w losowej kolejności. Pomiędzy próbami 1--2 min ciszy na normalizację reakcji.
+
+\subsection{Rejestrowane sygnały biomedyczne}
+\begin{itemize}
+    \item \textbf{EKG} -- rytm serca (HR) i zmienność rytmu serca (HRV)
+    \item \textbf{EMG} -- napięcie mięśni twarzy - czoła i szczęki
+    \item \textbf{Częstotliwość respiracji} -- ruchy klatki piersiowej
+\end{itemize}
+
+\subsection{Warunki eksperymentalne}
+\begin{itemize}
+    \item Ciche pomieszczenie
+    \item Słuchawki dobrej jakości (brak wpływu dźwięków otoczenia)
+    \item Stała głośność muzyki (np. 70 dB)
+    \item Niskie oświetlenie pomieszczenia
+    \item Pozycja siedząca podczas badań
+\end{itemize}
+
+\section{Analiza danych}
+\subsection{Przetwarzanie sygnałów}
+\begin{itemize}
+    \item \textbf{EKG} -- obliczenie tętna i zmienności rytmu (HRV) -- za pomocą fotopletyzmografii
+    \item \textbf{EMG} -- analiza napięcia mięśniowego
+    \item \textbf{Akcelerometr} -- analiza ruchów w rytm muzyki
+\end{itemize}
+
+\subsection{Porównania statystyczne}
+\begin{itemize}
+    \item Testy ANOVA -- porównanie średnich wartości dla różnych rodzajów muzyki
+    \item Korelacje -- analiza zależności między HRV a rodzajem muzyki
+    \item Analiza klastrów -- grupowanie uczestników na podstawie reakcji
+\end{itemize}
+
+\subsection{Wizualizacja danych}
+\begin{itemize}
+    \item Wykresy czasowe (np. zmiany tętna w czasie słuchania muzyki)
+    %\item Heatmapy aktywności mięśni
+    \item Analiza częstości występowania reakcji dla różnych gatunków muzyki
+\end{itemize}
+
+\section{Możliwe wnioski}
+\begin{itemize}
+    \item Czy muzyka klasyczna faktycznie uspokaja?
+    \item Czy szybkie tempo (np. rock, techno) powoduje wzrost tętna?
+    \item Czy emocjonalna muzyka wpływa na przewodnictwo skóry i napięcie mięśniowe?
+    \item Czy ludzie intuicyjnie poruszają się w rytm muzyki?
+\end{itemize}
+
+%\section{Rozszerzenia projektu}
+%\begin{itemize}
+%    \item Porównanie reakcji między grupami (np. muzycy vs. osoby bez wykształcenia muzycznego)
+%    \item Zastosowanie EEG do pomiaru aktywności mózgowej
+%    \item Analiza reakcji w rzeczywistych warunkach (np. koncert vs. laboratorium)
+%\end{itemize}
+
+\section{Przegląd literatury}
+Badania wskazują, że muzyka ma istotny wpływ na reakcje fizjologiczne organizmu. W szczególności:
+\begin{itemize}
+    \item Szybkie tempo muzyki może zwiększać tętno i przewodnictwo skóry, wskazując na wyższy poziom pobudzenia \cite{PMC9417331}.
+    \item Wolniejsza muzyka ma działanie relaksujące, wpływając na zmniejszenie napięcia mięśniowego \cite{PMC11411295}.
+    \item Indywidualne preferencje muzyczne mogą modyfikować reakcje fizjologiczne \cite{PMC9417331}.
+\end{itemize}
+
+
+\begin{thebibliography}{9}
+\bibitem{PMC9417331} \href{https://pmc.ncbi.nlm.nih.gov/articles/PMC9417331/}{Artykuł PMC9417331}
+\bibitem{PMC11411295} \href{https://pmc.ncbi.nlm.nih.gov/articles/PMC11411295/}{Artykuł PMC11411295}
+\end{thebibliography}
+
+
+\end{document}
