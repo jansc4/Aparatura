@@ -52,27 +52,39 @@ res_channels = [col for col in df.columns if "Respiration" in col]
 
 print(emg_channels)
 
-
-# Rysujemy EMG
-plt.figure(figsize=(12, 4))
 for emg in emg_channels:
+# Rysujemy EMG
+    plt.figure(figsize=(12, 4))
     plt.plot(df.index, df[emg], label=emg)
-plt.title("Sygnały EMG")
-plt.xlabel("Czas [s]")
-plt.ylabel("mV")
-plt.legend()
-plt.grid()
-plt.tight_layout()
-plt.show()
+    plt.title("Sygnały EMG")
+    plt.xlabel("Czas [s]")
+    plt.ylabel("mV")
+    plt.legend()
+    plt.grid()
+    plt.tight_layout()
+    plt.show()
 
-# Rysujemy PPG
-plt.figure(figsize=(12, 4))
 for ppg in ppg_channels:
+# Rysujemy PPG
+    plt.figure(figsize=(12, 4))
     plt.plot(df.index, df[ppg], label=ppg, color='r')
-plt.title("Sygnał PPG")
-plt.xlabel("Czas [s]")
-plt.ylabel("mV")
-plt.legend()
-plt.grid()
-plt.tight_layout()
-plt.show()
+    plt.title("Sygnał PPG")
+    plt.xlabel("Czas [s]")
+    plt.ylabel("mV")
+    plt.legend()
+    plt.grid()
+    plt.tight_layout()
+    plt.show()
+
+
+for res in res_channels:
+# Rysujemy EMG
+    plt.figure(figsize=(12, 4))
+    plt.plot(df.index, df[res], label=res)
+    plt.title("Sygnały respiracji")
+    plt.xlabel("Czas [s]")
+    plt.ylabel("mV")
+    plt.legend()
+    plt.grid()
+    plt.tight_layout()
+    plt.show()
