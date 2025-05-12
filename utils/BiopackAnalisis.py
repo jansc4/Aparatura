@@ -149,3 +149,8 @@ def bandpass_ppg(data, fs):
     nyq = 0.5 * fs
     b, a = butter(2, [lowcut / nyq, highcut / nyq], btype='band')
     return filtfilt(b, a, data)
+
+def compute_rms(data, fs, window_ms=250):
+    window_size = int((window_ms / 1000) * fs)
+    rms_values = np.sqrt(pd.Series(data).rolling(window=window_size, center=True).mean()**2)
+    return rms_values
